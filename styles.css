@@ -1,0 +1,29 @@
+/** Medium.com CSS overrides **/
+nav.metabar-block {
+  display: none !important;
+}
+
+/**
+ Must use visibility instead of display as otherwise
+ it thinks that the user has scrolled and tries to load
+ additional feed items repeatedly.
+ **/
+.homeContainer {
+  visibility: hidden !important;
+}
+
+/** Extension specific **/
+.medium-feed-hider-welcome {
+  position: absolute;
+  top: 150px;
+  left: 20%;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.medium-feed-hider-welcome a.button {
+  font-size: 18px;
+  margin-top: 10px;
+  width: 200px;
+}
